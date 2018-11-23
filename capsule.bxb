@@ -1,0 +1,17 @@
+capsule {
+  id (example.smartinsure)  // id의 경우 bixby 사이트에서 등록을해야 원하는 id 를 사용할 수 있음 
+  version (0.1.0)
+  format (3)
+  targets {
+    target (bixby-mobile-ko-KR)
+  }
+  capsule-imports {
+    import (viv.common) { 
+      as (common) version (3.22.15)
+    }
+    import (viv.money) { 
+      as (money) 
+      version (2.16.14)
+    }
+  }
+}

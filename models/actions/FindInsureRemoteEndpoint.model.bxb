@@ -1,0 +1,5 @@
+action (FindInsureRemoteEndpoint) {
+  type (Search)
+  description (Demonstrate how to use remote endpoints for a simple search.)
+  output (Insure)
+}

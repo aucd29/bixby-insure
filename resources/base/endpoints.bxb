@@ -1,0 +1,34 @@
+endpoints {
+  authorization {
+    none
+  }
+
+  action-endpoints {
+    action-endpoint (FindInsure) {
+      accepted-inputs ()
+      local-endpoint (find-insure.js)
+    }
+    
+    action-endpoint (FindInsureFiltering) {
+      accepted-inputs (type)
+      local-endpoint (find-insure-filtering.js)
+    }
+    
+    // direct 로 call 하려면 이렇게 하는 듯 
+    action-endpoint (FindInsureRemoteEndpoint) {
+      accepted-inputs ()
+      remote-endpoint ("{remote.url}/shoes") {
+        method (GET)
+      }
+    }
+    
+    action-endpoint (FindInsureError) {
+      local-endpoint (find-insure-error.js)
+    }
+    
+    action-endpoint (FindInsureReturnHeaders) {
+      local-endpoint (find-insure-return-headers.js)
+    }
+    
+  }
+}

@@ -1,0 +1,6 @@
+dialog (Result) {
+  match {
+    Insure(this)
+  }
+  template ("매칭되는 보험을 찾았습니다. #{spell (size(this))}:")
+}

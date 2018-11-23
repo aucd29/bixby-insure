@@ -1,0 +1,4 @@
+train (t-y3qiv4waqekqmodwvsev1ue0t) {
+  utterance ("[g:FindInsureFiltering] (자동차)[v:Type:자동차] 보험 찾아줘")
+  plan (Y2BmkMxIzCvPSNQrzk0sKsnMKy4tStXzBFMMalik3DLzUiDSbpk5JalFmXnpDOJY1IVUFqQyMDEwAjEDkGRkAAEoHwA=)
+}

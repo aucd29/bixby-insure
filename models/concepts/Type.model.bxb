@@ -1,0 +1,7 @@
+enum (Type) {
+  description (Type of a insure)
+  symbol (자동차)
+  symbol (손해)
+  symbol (여행)
+  symbol (생명)
+}

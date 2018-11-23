@@ -1,0 +1,19 @@
+structure (Insure) {
+  property (name) {
+    type (Name)
+    min (Required)
+  }
+  property (description) {
+    type (Description)
+    min (Required)
+  }
+  property (type) {
+    type (Type)
+    min (Required)
+  }
+  // import (viv.money) 를 추가해야 함 
+  property (price) {
+    type (money.Price)
+    min (Required)
+  }
+}

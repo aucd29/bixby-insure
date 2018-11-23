@@ -1,0 +1,25 @@
+result-view {
+  match {
+    Insure (this)
+  }
+  
+  render {
+    if ("size(this) > 1") {
+      list-of (this) {
+        where-each (insure) {
+          layout-macro (insure-summary-macro) {
+            param (insure) {
+              expression (insure)
+            }
+          }
+        }
+      }
+    } else-if ("size(this) == 1") {
+      layout-macro (insure-details-macro) {
+        param (insure) {
+          expression (this)
+        }
+      }
+    }
+  }
+}

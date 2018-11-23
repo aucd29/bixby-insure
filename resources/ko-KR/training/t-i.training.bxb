@@ -1,0 +1,8 @@
+train (t-idwuysui0nx9glvcc3i0hzrd0) {
+  utterance ("[g:FindInsureFiltering] (여행자)[v:Type:여행] 보험 찾아줘")
+  plan (Y2BmkMxIzCvPSNQrzk0sKsnMKy4tStXzBFMMalik3DLzUiDSbpk5JalFmXnpDOJY1IVUFqQyMDEwAjEDkGRkAAEoHwA=)
+}
+train (t-ipmd4xudsdlc9eeraq5dp7ilu) {
+  utterance ("[g:FindInsureFiltering] (암)[v:Type:생명] 보험 찾아줘")
+  plan (Y2BmkEqtSMwtyEnVK85NLCrJzCsuLUrV8wRTDOrY5Nwy81Ig8m6ZOSWpRZl56QwS2BSGVBakMjAxMAIxA5BkZAABKB8A)
+}

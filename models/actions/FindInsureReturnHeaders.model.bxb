@@ -1,0 +1,5 @@
+action (FindInsureReturnHeaders) {
+    type (Search)
+  description (Demonstrate using http with returnHeaders, which gives more fine control over the result of the HTTP call.)
+  output (Insure)
+}

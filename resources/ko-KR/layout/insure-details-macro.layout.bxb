@@ -1,0 +1,40 @@
+layout-macro-def(insure-details-macro) {
+  params {
+    param (insure) {
+      type (Insure)
+      min (Required)
+      max (One)
+    }
+  }
+  
+  content {
+    section {
+      content {
+        title-area {
+          slot1 {
+            text {
+              value {
+                template ("#{value (insure.name)}")
+              }
+            }
+          }
+        }
+        paragraph {
+          value {
+            template ("#{value (insure.price)}")
+          }
+        }
+        // paragraph {
+        //   value {
+        //     template ("#{value (insure.type)}")
+        //   }
+        // }
+        paragraph {
+          value {
+            template ("#{value (insure.description)}")
+          }
+        }
+      }
+    }
+  }
+}

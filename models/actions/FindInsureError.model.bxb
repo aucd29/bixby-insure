@@ -1,0 +1,15 @@
+action (FindInsureError) {
+  type (Search)
+  description (Show how to deal with HTTP errors.)
+  output (Insure) {
+    throws {
+      error (ErrorWhichHalts) {
+        on-catch {
+          halt {
+            dialog("HTTP error was caught, and execution halted.")
+          }
+        }
+      }
+    }
+  }
+}

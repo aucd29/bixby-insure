@@ -1,0 +1,6 @@
+dialog (Value) {
+  match {
+    Insure (insure)
+  }
+  template ("#{value (insure.name)}")
+}
